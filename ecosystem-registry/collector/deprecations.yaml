@@ -14,11 +14,24 @@ contrib:
     distributions:
     - contrib
     subtype: null
-  extension: []
+  extension:
+  - name: kafkatopicsobserver
+    last_version: v0.149.0
+    deprecated_in_version: v0.160.0
+    source_repo: opentelemetry-collector-contrib
+    distributions:
+    - contrib
+    subtype: observer
   processor:
   - name: datadogsemanticsprocessor
     last_version: v0.147.0
     deprecated_in_version: v0.148.0
+    source_repo: opentelemetry-collector-contrib
+    distributions: []
+    subtype: null
+  - name: dnslookupprocessor
+    last_version: v0.149.0
+    deprecated_in_version: v0.160.0
     source_repo: opentelemetry-collector-contrib
     distributions: []
     subtype: null
@@ -35,4 +48,11 @@ contrib:
     deprecated_in_version: v0.148.0
     source_repo: opentelemetry-collector-contrib
     distributions: []
+    subtype: null
+  - name: jmxreceiver
+    last_version: v0.149.0
+    deprecated_in_version: v0.160.0
+    source_repo: opentelemetry-collector-contrib
+    distributions:
+    - contrib
     subtype: null
